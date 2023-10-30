@@ -1,0 +1,57 @@
+#special {
+  background-color: skyblue;
+}
+/* <a> element yang menerapkan href attribute */
+a[href] {
+  color: blue;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+a[href$=".org"] {
+  color: red;
+}
+/* Contoh penggunaan selektor atribut */
+/* Menargetkan elemen dengan atribut "data-role" */
+[data-role] {
+  color: blue;
+}
+
+/* Menargetkan elemen dengan atribut "data-status" dan nilai "active" */
+[data-status="active"] {
+  background-color: green;
+  color: white;
+}
+
+/* Menargetkan elemen dengan atribut "data-options" dan nilai mengandung "red" */
+[data-options*="red"] {
+  border: 2px solid red;
+}
+
+/* Menargetkan elemen dengan atribut "data-category" dan nilai diawali dengan "fruit" */
+[data-category^="fruit"] {
+  font-weight: bold;
+}
+
+/* Menargetkan elemen dengan atribut "data-file" dan nilai diakhiri dengan ".pdf" */
+[data-file$=".pdf"] {
+  text-decoration: underline;
+}
+
+/* Menargetkan elemen dengan atribut "title" dan nilai mengandung "example" */
+[title*="example"] {
+  font-style: italic;
+}
