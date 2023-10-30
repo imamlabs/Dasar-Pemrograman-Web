@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @font-face {
+    font-family: "Dicoding Font";
+    src: url('Believeit.ttf');
+  }
+
+  @font-face {
+    font-family: "fontstyle";
+    src: url('WinterSong.ttf');
+  }
+
+  p {
+    font-family: fontstyle;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+
+  body {
+    font-family: "Dicoding Font";
+  }
+
+  .small-text {
+    font-size: 0.8em;
+    /* Ukuran font 0.8em (80% dari ukuran font default) */
+  }
+
+  .large-text {
+    font-size: 1.5em;
+    /* Ukuran font 1.5em (1.5x ukuran font default) */
+  }
+
+  .vw-example {
+    width: 50vw;
+    /* Lebar 50% dari lebar viewport */
+    height: 20vh;
+    /* Tinggi 20% dari tinggi viewport */
+    background-color: lightblue;
+  }
+
+  .absolute-example {
+    font-size: 14px;
+    /* Ukuran font 14px menggunakan satuan absolut (px) */
+    padding: 10px;
+    /* Padding 10px menggunakan satuan absolut (px) */
+  }
+
+  body {
+    font-size: 16px;
+    /* Ukuran font default */
+  }
+
+  .example {
+    padding: 1em;
+    /* Padding 1em (1x ukuran font) */
+    border: 2px solid #333;
+    margin: 2rem;
+    /* Margin 2rem (2x ukuran font) */
+  }
+</style>
+
+<body>
+  <header>
+    <div class="jumbotron">
+      <h1>Bandung</h1>
+      <p>
+        Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi
+        tersebut.
+      </p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Sejarah</a></li>
+        <li><a href="#">Geografis</a></li>
+        <li><a href="#">Wisata</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Satuan CSS</h1>
+  <p class="example">Ini adalah contoh penggunaan satuan relatif (em, rem, vw, vh) dan absolut (px).</p>
+  <p class="small-text">Ini adalah teks dengan ukuran font lebih kecil (0.8em).</p>
+  <p class="large-text">Ini adalah teks dengan ukuran font lebih besar (1.5em).</p>
+  <div class="vw-example">Lebar dan tinggi elemen ini menggunakan vw dan vh.</div>
+  <p class="absolute-example">Ini adalah contoh penggunaan satuan absolut (px).</p>
+</body>
+
+</html>
