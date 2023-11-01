@@ -1,0 +1,66 @@
+/* Underline */
+.underline-text {
+  text-decoration: underline;
+}
+/* Overline */
+.overline-text {
+  text-decoration: overline;
+}
+/* Line-through (strikethrough) */
+.line-through-text {
+  text-decoration: line-through;
+}
+/* No text decoration */
+.no-decoration-text {
+  text-decoration: none;
+}
+.decoration-none {
+  text-decoration: none;
+}
+main {
+  font-family: sans-serif;
+}
+.transform-none {
+  text-transform: none;
+}
+.transform-capitalize {
+  text-transform: capitalize;
+}
+.transform-lowercase {
+  text-transform: lowercase;
+}
+.transform-uppercase {
+  text-transform: uppercase;
+}
+.letter-spacing {
+  letter-spacing: 4px;
+}
+.word-spacing {
+  word-spacing: 1.5em;
+}
+p + div {
+  font-size: 2rem;
+}
+
+.one {
+  text-shadow: 2px 2px 0px #000000;
+  background-color: #eeeeee;
+  color: #666666;
+}
+
+.two {
+  text-shadow: 4px 4px 3px #666666;
+  background-color: #dddddd;
+  color: #666666;
+}
+
+.three {
+  text-shadow: 4px 4px 7px #111111;
+  background-color: #cccccc;
+  color: #ffffff;
+}
+.four {
+  text-shadow: -2px -2px #666666;
+  background-color: #cccccc;
+  color: #bbbbbb;
+}

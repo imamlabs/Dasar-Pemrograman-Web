@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content p {
+      max-width: 800px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: deeppink;
+    }
+
+    p {
+      height: 75%;
+      width: 75%;
+      background-color: #fbdd1c;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .box {
+      height: 270px;
+      width: 270px;
+      background-color: #11c5c6;
+    }
+
+    .container {
+      width: 200px;
+      height: 100px;
+      border: 1px solid #000;
+      overflow: visible;
+    }
+
+    .container-hidden {
+      width: 200px;
+      height: 100px;
+      border: 1px solid #000;
+      overflow: hidden;
+    }
+
+    .container-scroll {
+      width: 200px;
+      height: 100px;
+      border: 1px solid #000;
+      overflow: scroll;
+    }
+
+    .container-auto {
+      width: 200px;
+      height: 100px;
+      border: 1px solid #000;
+      overflow: auto;
+    }
+
+    div {
+      height: 200px;
+      width: 200px;
+      background-color: lightgreen;
+      border: 10px solid cornflowerblue;
+      padding: 20px;
+    }
+
+    .content {
+      box-sizing: content-box;
+    }
+
+    .box {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem
+      ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis
+      dignissimos in iusto magnam nulla sed tempora.
+    </p>
+  </div>
+  <div class="content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eius explicabo fuga
+      iusto magni minus odit praesentium, quasi quisquam quos repellat suscipit tempora tenetur?
+      Assumenda cum laborum officiis quos ratione.
+    </p>
+  </div>
+  <div class="container">
+    <p>This is some visible content. If it overflows, it will be visible outside the container.</p>
+  </div>
+
+  <div class="container-hidden">
+    <p>This is some hidden content. If it overflows, it will be hidden.</p>
+  </div>
+
+  <div class="container-scroll">
+    <p>This is some scrollable content. If it overflows, a scroll bar will appear to view the hidden content.</p>
+  </div>
+
+  <div class="container-auto">
+    <p>This is some auto content. If it overflows, a scroll bar will appear only when needed.</p>
+  </div>
+  <div class="content"></div>
+  <p>
+    Elemen menerapkan <code>box-sizing: content-box;</code> Ukuran box secara keseluruhan akan
+    menjadi 260px lebar, 260px tinggi; 260 = 200 + 20 + 20 + 10 + 10
+  </p>
+  <br />
+  <div class="box"></div>
+  <p>
+    Elemen menerapkan <code>box-sizing: border-box;</code> Ukuran box akan tetap 200px lebar,
+    200px tinggi meskipun menerapkan padding dan border
+  </p>
+</body>
+
+</html>
