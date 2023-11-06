@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      background-color: lightgray;
+      justify-content: space-around;
+      align-items: center;
+      height: 200px;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .column-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .item {
+      background-color: skyblue;
+      padding: 20px;
+      border: 1px solid #000;
+    }
+
+    .containerx {
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid #333;
+      padding: 10px;
+    }
+
+    .item1 {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Contoh Flex Direction</h2>
+
+  <div class="container row">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <div class="container row-reverse">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+  <div class="container column">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <div class="container column-reverse">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+  <br>
+  <h2>Contoh Flex Wrap</h2>
+  <div class="containerx">
+    <div class="item1">1</div>
+    <div class="item1">2</div>
+    <div class="item1">3</div>
+    <div class="item1">4</div>
+    <div class="item1">5</div>
+    <div class="item1">6</div>
+    <div class="item1">7</div>
+    <div class="item1">8</div>
+    <div class="item1">9</div>
+    <div class="item1">10</div>
+    <div class="item1">11</div>
+  </div>
+</body>
+
+</html>

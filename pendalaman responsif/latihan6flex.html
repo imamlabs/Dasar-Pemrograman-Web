@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .container {
+      display: flex;
+      gap: 1rem;
+      /* diterapkan secara vertikal dan horizontal dengan nilai yang sama */
+      border: 2px solid #333;
+      padding: 10px;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Gap secara vertikal dan horizontal dengan nilai yang sama</h3>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+
+  <h3>Gap secara vertikal dan horizontal dengan nilai berbeda</h3>
+  <div class="container" style="gap: 1rem 2rem;">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+
+  <h3>Row Gap (gap secara horizontal)</h3>
+  <div class="container" style="row-gap: 1rem;">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+
+  <h3>Column Gap (gap secara vertikal)</h3>
+  <div class="container" style="column-gap: 1rem;">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+</body>
+
+</html>

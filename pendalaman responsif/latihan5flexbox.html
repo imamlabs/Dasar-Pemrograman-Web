@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      border: 2px solid #333;
+      padding: 10px;
+      height: 300px;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      margin: 10px;
+    }
+
+    .container-flex-end {
+      align-content: flex-end;
+    }
+
+    .container-center {
+      align-content: center;
+    }
+
+    .container-space-between {
+      align-content: space-between;
+    }
+
+    .container-space-around {
+      align-content: space-around;
+    }
+
+    .container-space-evenly {
+      align-content: space-evenly;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>align-content: flex-start</h3>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>align-content: flex-end</h3>
+  <div class="container container-flex-end">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>align-content: center</h3>
+  <div class="container container-center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>align-content: space-between</h3>
+  <div class="container container-space-between">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>align-content: space-around</h3>
+  <div class="container container-space-around">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <h3>align-content: space-evenly</h3>
+  <div class="container container-space-evenly">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+
+</html>
